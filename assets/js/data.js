@@ -6,18 +6,18 @@
     version:'2.0.0',
     location:'Wilayah yang dipilih pengguna',
     credits: [
-    {
-    name: 'Amar Al Haq',
-    instagram: 'https://instagram.com/al_akm.li?cplk=ZzMyaTU0YTY4MnVw'
-    },
-    {
-    name: 'Ahmad Habib Ridho',
-    instagram: 'https://instagram.com/ahridhof?dlrf=M3NlOTR3ZGV1MzY%3D'
-    },
-    {
-    name: 'Ahmad Nurjihad',
-    instagram: 'https://instagram.com/nurjhdd?exln=MTJ0aHg3N3AxbHFmZQ%3D%3D'
-    }
+      {
+      name: 'Amar Al Haq',
+      instagram: 'https://instagram.com/al_akm.li?cplk=ZzMyaTU0YTY4MnVw'
+      },
+      {
+      name: 'Ahmad Habib Ridho',
+      instagram: 'https://instagram.com/ahridhof?dlrf=M3NlOTR3ZGV1MzY%3D'
+      },
+      {
+      name: 'Ahmad Nurjihad',
+      instagram: 'https://instagram.com/nurjhdd?exln=MTJ0aHg3N3AxbHFmZQ%3D%3D'
+      }
     ],
     defaults:{
       area:'Zona layanan percontohan (ilustratif)',waste:120, organic:52,plastic:20,paper:12,
