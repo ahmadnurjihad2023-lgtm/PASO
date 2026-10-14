@@ -5,7 +5,20 @@
     schema:2,
     version:'2.0.0',
     location:'Wilayah yang dipilih pengguna',
-    credits:['Amar Al Haq','Ahmad Habib Ridho','Ahmad Nurjihad'],
+    credits: [
+  {
+    name: 'Amar Al Haq',
+    instagram: 'https://www.instagram.com/username_amar/'
+  },
+  {
+    name: 'Ahmad Habib Ridho',
+    instagram: 'https://www.instagram.com/username_habib/'
+  },
+  {
+    name: 'Ahmad Nur Jihad',
+    instagram: 'https://www.instagram.com/username_jihad/'
+  }
+],
     defaults:{
       area:'Zona layanan percontohan (ilustratif)',waste:120, organic:52,plastic:20,paper:12,
       collection:68,sorting:58,capacity:8,budget:1100,demand:50,price:1.2,
