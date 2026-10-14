@@ -272,3 +272,25 @@ input[type=range]{accent-color:#d36546}
 @media(max-width:760px){.region-intro{display:block}.region-stats{margin-top:24px}.region-row{flex-wrap:wrap}.region-actions{width:100%;justify-content:flex-start}.region-selector-wrap{max-width:145px;min-width:90px}.region-add-link{padding:9px;font-size:0}.region-add-link::first-letter{font-size:16px}}
 @media(max-width:440px){.topbar{gap:5px}.top-report{display:none}.region-selector-wrap{max-width:132px}#regionSelect{font-size:11px;padding:7px}.top-left{max-width:110px;overflow:hidden}.region-add-link{font-size:0}.region-add-link:before{content:'＋';font-size:17px}.region-add-link::first-letter{font-size:0}}
 @media print{.region-add-link,.region-selector-wrap,.region-actions{display:none!important}}
+/* Link Instagram anggota tim */
+
+a.team-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #263b35;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+a.team-tag:hover {
+  background: #263b35;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+a.team-tag:focus-visible {
+  outline: 2px solid #d65e3d;
+  outline-offset: 3px;
+}

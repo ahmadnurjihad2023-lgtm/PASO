@@ -139,7 +139,17 @@ function renderMetodologi(){return `<div class="result-hero"><span class="badge"
 <div class="card">${U.panel('Metodologi demonstrasi','Jalur perhitungan yang dapat diperiksa ulang.') }<div class="grid grid-3">${U.box('01','Saringan kelayakan','Operator, anggaran CAPEX, material tersedia, persyaratan teknis dan khusus RDF. Ambang parameter hanya untuk demo.')}${U.box('02','Skor multi-kriteria','Skor lingkungan, ekonomi, sosial, kesiapan; dikalikan bobot yang dapat diubah, lalu dinormalisasi.')}${U.box('03','Volume material','Timbulan × komposisi × cakupan pengumpulan × pemilahan; dibatasi kapasitas fasilitas.')}${U.box('04','Unit economics','Hasil pulih = input × yield contoh. Serapan dibatasi permintaan. Harga dan OPEX digunakan untuk margin sederhana.')}${U.box('05','Verifikasi pilot','Cek neraca masuk=hasil+residu+selisih; produk terjual≤hasil; bukti material, pasar, biaya, inspeksi.')}${U.box('06','Keputusan adaptif','Rekomendasi lanjut / revisi / kaji biaya / hentikan bergantung pada prasyarat, bukti, dan hasil.')}</div></div>
 <div class="grid grid-2"><div class="card">${U.panel('Membangun data wilayah yang valid','Data Yogyakarta hanyalah titik awal; wilayah lain bisa ditambahkan sendiri.')}<ul class="check-list"><li>Tambahkan nama kota, kabupaten, atau cakupan layanan melalui menu <a href="wilayah.html">Wilayah</a>.</li><li>Setiap lokasi mempunyai input, alternatif, catatan pilot, verifikasi, dan laporan terpisah.</li><li>Konteks Yogyakarta tersedia dalam sumber resmi terkait; konteks lokasi baru perlu dilengkapi data dari lembaga terkait, survei, dan pihak pembeli.</li></ul></div><div class="card">${U.panel('Transparansi data dan metode','Beda antara hitungan otomatis dan hasil yang telah terbukti.')}<ul class="check-list">${['Angka bawaan setiap wilayah adalah asumsi simulasi, bukan data resmi.','Model menggunakan aturan dan penilaian multikriteria, bukan AI terlatih.','Perhitungan ekonomi belum mencakup seluruh faktor pembiayaan.','Checkbox bukti merupakan input pengguna, bukan pengesahan audit.','Data disimpan hanya pada browser ini; untuk berbagi gunakan ekspor JSON per wilayah.'].map(t=>`<li>${t}</li>`).join('')}</ul></div></div>
 <div class="card">${U.panel('Sumber dan bacaan','Tautan eksternal akan terbuka di tab baru saat tersedia koneksi.') }<ul class="reference-list">${D.references.map((r,i)=>`<li><span class="badge badge-grey">${String(i+1).padStart(2,'0')}</span>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a>`:`<span>${esc(r.label)} · berkas diberikan tim</span>`}</li>`).join('')}</ul></div>
-<div class="card">${U.panel('Tim penulis dalam draf esai','Kredit ditulis sebagaimana tercantum pada file sumber.') }<div class="team-row">${D.credits.map(n=>`<span class="team-tag">${esc(n)}</span>`).join('')}</div><p class="smallprint" style="margin-top:14px">Kredit dan nama proyek dapat disesuaikan setelah dikonfirmasi kepada tim esai.</p></div>`;
+<div class="card">${U.panel('Tim penulis dalam draf esai','Kredit ditulis sebagaimana tercantum pada file sumber.') }<div class="team-row">${D.credits.map(person => `
+  <a
+    href="${esc(person.instagram)}"
+    class="team-tag"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Kunjungi Instagram ${esc(person.name)}"
+  >
+    ${esc(person.name)} ↗
+  </a>
+`).join('')}</div><p class="smallprint" style="margin-top:14px">Kredit dan nama proyek dapat disesuaikan setelah dikonfirmasi kepada tim esai.</p></div>`;
 }
 
 function renderWilayah(){
