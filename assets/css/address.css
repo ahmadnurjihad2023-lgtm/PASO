@@ -1,0 +1,26 @@
+/* PASO · form pemilihan wilayah, daftar bantuan yang bisa diakses keyboard */
+.region-form .address-field{position:relative;margin-top:1px}
+.region-form .address-field input{display:block;width:100%;box-sizing:border-box;border:1px solid #c8c8c0;border-radius:0;background:#fff;padding:13px 42px 13px 14px;color:#23362f;font:500 14px/1.4 'DM Sans',sans-serif;min-height:47px;transition:border-color .18s,box-shadow .18s}
+.region-form .address-field input:focus{outline:2px solid #ba6948;outline-offset:1px;border-color:#ba6948}
+.region-form .address-field input:disabled{background:#efeee9;color:#777e79;cursor:not-allowed}
+.region-form .address-field::after{content:'⌄';pointer-events:none;position:absolute;top:10px;right:13px;color:#a05a3c;font-size:20px}
+.region-form .address-field .suggest-list{position:absolute;z-index:40;left:0;right:0;top:calc(100% + 4px);max-height:255px;overflow:auto;border:1px solid #d4c3aa;background:#fffdf9;box-shadow:0 12px 24px rgba(22,37,30,.17);padding:5px;margin:0;list-style:none;overscroll-behavior:contain}
+.region-form .address-field .suggest-list[hidden]{display:none}
+.region-form .suggest-option{list-style:none;display:flex;align-items:center;gap:9px;padding:10px 11px;margin:0;color:#253b35;font-size:13px;line-height:1.4;cursor:pointer;border-bottom:1px solid #f0eee7}
+.region-form .suggest-option:last-child{border-bottom:0}
+.region-form .suggest-option:hover,.region-form .suggest-option.is-highlighted{background:#e9efe7;color:#144f43}
+.region-form .suggest-option[aria-selected='true']{outline:1px solid #679584;outline-offset:-1px}
+.region-form .suggest-option .suggest-icon{font-size:15px;color:#bf6947;width:19px;text-align:center}
+.region-form .suggest-option small{margin-left:auto;color:#74847c;font-size:10px}
+.region-form .suggest-empty{padding:12px;color:#747d78;font-size:12px;line-height:1.55}
+.region-form .address-help{font-size:11px;line-height:1.55;color:#60736a;margin:0 0 3px}
+.region-form .address-example{font-size:11px;line-height:1.5;margin:1px 0 4px;color:#a15b3f}
+.region-form .address-caption{font-size:12px;line-height:1.55;background:#f2f1e9;border-left:3px solid #be7451;padding:12px;margin:6px 0}
+.region-form .address-caption strong{color:#3f534a}
+.region-form .address-actions{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.region-form .address-cancel{background:transparent;border:1px solid #b9c0b8;padding:10px 14px;color:#35534b;font:600 12px 'DM Sans',sans-serif;cursor:pointer}
+.region-form .address-cancel[hidden]{display:none}
+.region-form .region-check[hidden]{display:none}
+.region-form .region-step{font:700 10px 'DM Sans',sans-serif;letter-spacing:.12em;color:#b75d3f;text-transform:uppercase;margin-top:10px}
+.region-form label[for="regionProvince"],.region-form label[for="regionName"],.region-form label[for="regionDistrict"],.region-form label[for="regionArea"]{margin-top:0}
+@media(max-width:540px){.region-form .address-field .suggest-list{max-height:215px}}

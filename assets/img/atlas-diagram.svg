@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="840" viewBox="0 0 820 840" role="img" aria-labelledby="title desc">
+<title id="title">Diagram konseptual jaringan material berbagai wilayah</title><desc id="desc">Garis jalan geometris, aliran material dan tiga titik keputusan sebagai ilustrasi gagasan PASO. Bukan peta wilayah sungguhan.</desc>
+<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".9" fill="#647e83" opacity=".24"/></pattern><pattern id="lines" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 0 H12" fill="none" stroke="#738e91" stroke-width=".5" opacity=".13"/></pattern></defs>
+<rect width="820" height="840" fill="#24383b"/><rect width="820" height="840" fill="url(#dots)"/>
+<g fill="none" stroke="#789298" stroke-width="1.2" opacity=".4">
+<path d="M-20 141 167 190 313 121 509 180 712 110 839 174"/><path d="M-20 185 161 226 319 162 503 221 718 155 839 218"/><path d="M-20 251 122 298 337 240 496 301 671 239 839 305"/><path d="M-20 341 157 382 286 332 449 398 641 356 839 398"/><path d="M-20 431 184 463 317 428 468 479 661 434 839 488"/><path d="M-20 548 157 532 318 576 519 533 662 567 840 528"/><path d="M-20 634 140 615 307 677 505 639 679 695 840 656"/><path d="M59 -30 93 169 28 317 119 459 67 669 107 882"/><path d="M175 -30 214 151 148 310 236 486 185 685 239 858"/><path d="M284 -30 332 119 268 293 352 464 294 661 347 856"/><path d="M418 -30 463 156 399 300 495 483 432 681 484 856"/><path d="M546 -30 574 171 509 326 607 490 556 653 621 854"/><path d="M675 -30 697 180 639 328 736 485 673 659 750 853"/>
+</g>
+<path d="M721 -40 C664 107 708 235 593 291 C478 348 485 424 379 458 C273 490 302 616 197 704 C147 752 139 814 118 884" fill="none" stroke="#95c7bf" stroke-width="40" opacity=".13"/>
+<path d="M721 -40 C664 107 708 235 593 291 C478 348 485 424 379 458 C273 490 302 616 197 704 C147 752 139 814 118 884" fill="none" stroke="#9bc8be" stroke-width="2" opacity=".7" stroke-dasharray="10 8"/>
+<g fill="none" stroke="#e0a084" stroke-width="4"><path d="M168 570 333 398 507 473 659 288"/><path d="M168 570 449 668 507 473" stroke-width="2" stroke-dasharray="7 12"/></g>
+<g stroke="#f1ede1" fill="#d35b3b"><circle cx="168" cy="570" r="19" stroke-width="5"/><circle cx="507" cy="473" r="19" stroke-width="5"/><circle cx="659" cy="288" r="19" stroke-width="5"/></g>
+<g stroke="#cbd9ce" stroke-width="2" fill="#24383b"><circle cx="333" cy="398" r="9"/><circle cx="449" cy="668" r="9"/></g>
+<g font-family="sans-serif" fill="#f3eee3"><text x="110" y="523" font-size="15" font-weight="700">01 / DATA</text><text x="536" y="446" font-size="15" font-weight="700">02 / OPSI</text><text x="575" y="245" font-size="15" font-weight="700">03 / DAMPAK</text></g>
+<g fill="none" stroke="#e7e3d5" opacity=".5"><path d="M450 55 H754 V99"/><path d="M55 751 V796 H361"/></g>
+<text x="57" y="73" fill="#e7e3d5" font-family="monospace" font-size="12" letter-spacing="2">SIRKULASI MATERIAL / ILUSTRASI WILAYAH</text>
+<text x="58" y="118" fill="#e7e3d5" font-family="Georgia,serif" font-size="43">Jejak nilai</text><text x="58" y="163" fill="#e7e3d5" font-family="Georgia,serif" font-size="43">di setiap wilayah.</text>
+<g font-family="monospace" font-size="11" fill="#abbfc0"><text x="53" y="804">KERANGKA SIMULASI — BUKAN PETA ASLI</text><text x="659" y="776">N ↑</text><path d="M683 728 V761 M674 740 683 726 691 740" stroke="#e3e5dc" fill="none" stroke-width="1.5"/></g>
+</svg>
